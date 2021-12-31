@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Eval method</title>
+</head>
+<body>
+    <form action="" name="Example">
+        <input type="text" name="input" class="inputs" placeholder="enter values">
+        <input type="button" class="calculate"  value="calculate" onclick="cal()">
+        <input type="reset" value="reset">
+        <input type="text" name="answere">
+    </form>
+    
+
+    <script>
+        function cal(){
+
+            document.Example.answere.value = eval(document.Example.input.value);
+        }
+    </script>
+</body>
+</html>
